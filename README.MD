@@ -36,5 +36,6 @@ dart run
 - file **`pubspec.yaml`**: arquivo principal que é o descritor do projeto.
   - **`environment`**: variáveis de ambiente
     - **sdk**: versão do dart usado no projeto.
-  - 
-- 
+  
+
+## Variáveis
