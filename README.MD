@@ -3,7 +3,7 @@
 ### Instruções iniciais - instalação
 
 - [instalação do chocolatey](https://chocolatey.org/install)
-- choco install git
+- comando power shell: choco install git
 - [instalar JDK Java 11 por exemplo](https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html)
 - FVM
 #### Extenções para VSCode
@@ -20,3 +20,9 @@
 
 
 A linguagem Dart é 100% orientado a objeto. `Não há por exemplo tipos primitivos`, porém ela aceita variáveis de nivel superior bem como funções.
+
+
+#### Criação de Projeto
+```sh
+dart create -t console-full nome_qq
+```
