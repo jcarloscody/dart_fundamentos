@@ -39,3 +39,5 @@ dart run
   
 
 ## Variáveis
+- [Tipos de variáveis]()
+- [por que Null safety?]() um dos problemas nas linguagens é o tratamento de valores nulos. então o null safety servirá justamente para isto, o dart irá nos informar sobre a possibilidade de a variável vir nula.
