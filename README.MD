@@ -41,3 +41,13 @@ dart run
 ## Variáveis
 - [Tipos de variáveis]()
 - [por que Null safety?]() um dos problemas nas linguagens é o tratamento de valores nulos. então o null safety servirá justamente para isto, o dart irá nos informar sobre a possibilidade de a variável vir nula.
+
+
+## Modificadores
+- Final:
+  - não podem ser alterados depois de inicializadas(imutável)
+  - são definidas do programa em tempo de execução(runtime)
+- Const:
+  - não podem ser alteradas depois de inicializadas
+  - são definidas no programa em tempo de compilacao
+  - não podem receber valores de outras variaveis a nao ser que essas variaveis forem const tbm
