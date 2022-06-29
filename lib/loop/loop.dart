@@ -1,5 +1,3 @@
-import 'dart:html';
-
 void main(List<String> args) {
   var n = List.generate(10, (index) => index);
 
@@ -7,7 +5,7 @@ void main(List<String> args) {
   //   print(i);
   // }
 
-  String frase = "olaa";
+  String frase = "olaa aaaaaaaaaaa    ";
   int contador = 0;
   List<String?> conclusao = [];
   List<String?> letrasRepetidas = [];
@@ -47,4 +45,14 @@ void main(List<String> args) {
   var saltar = n.skipWhile((value) => value < 10);
 
   var listMap = n.map((e) => 'n $e');
+
+  final nome = "kkkkkkkkkkkkkkkkkkkkkk";
+
+  var subStringNome = nome.substring(7);
+  subStringNome.substring(7, 8);
+  nome.startsWith('5');
+
+  var nj = 165416485.35135;
+
+  nj.toStringAsFixed(2);
 }
