@@ -5,36 +5,40 @@ void main(List<String> args) {
   //   print(i);
   // }
 
+  
+  //ALGORITMO COMEÇA AQUI
   String frase = "olaa aaaaaaaaaaa    ";
   int contador = 0;
   List<String?> conclusao = [];
-  List<String?> letrasRepetidas = [];
+  List<String?> letrasSemRepeticao = [];
   bool primeiraVez = true;
 
-  for (var i = 0; i < frase.length; i++) {
-    if (letrasRepetidas.contains(frase[i])) {
+  for (var i = 0; i < frase.length; i++) {//AQUI ELE PEGA TODAS AS LETRAS SEM REPETIÇÃO DA FRASE
+    if (letrasSemRepeticao.contains(frase[i])) {
       continue;
     }
-    letrasRepetidas.add(frase[i]);
+    letrasSemRepeticao.add(frase[i]);
   }
 
-  while (contador < letrasRepetidas.length) {
-    String? letra = letrasRepetidas[contador];
-    int xVezes = 0;
-    for (var ii = 0; ii < frase.length; ii++) {
-      if (letra == frase[ii]) {
-        xVezes++;
+  while (contador < letrasSemRepeticao.length) {//FAZ UM LOOP DAS LETRAS SEM REPETIÇÃO
+    String? letra = letrasSemRepeticao[contador];//PEGA UMA LETRA EM CADA LOOP
+    int xVezes = 0;//CONTAR QUANTAS VEZES ESTA LETRA SE REPETE NA FRASE
+    for (var ii = 0; ii < frase.length; ii++) {//FAZ UM LAÇO NA FRASE
+      if (letra == frase[ii]) {//VERIFICA SE A LETRA ESCOLHIDA É = A AQUELA LETRA DO LAÇO DA FRASE
+        xVezes++;// INCREMENTA
       }
     }
-    conclusao.add("A letra ${letrasRepetidas[contador]} apareceu $xVezes");
+    conclusao.add("A letra ${letra} apareceu $xVezes");//ADICIONA AO VETOR A LETRA E A QUANTIDFADE DE VEZES
     contador++;
   }
 
-  for (var i = 0; i < conclusao.length; i++) {
+  for (var i = 0; i < conclusao.length; i++) {//FAZ UM LOOP NO VETOR CONCLUSAO
     print(conclusao[i]);
   }
+  
+  //ALGORITMO TERMINA AQUI
 
-  letrasRepetidas.where((element) => element != '').forEach((element) {
+  letrasSemRepeticao.where((element) => element != '').forEach((element) {
     print(element);
   });
 
