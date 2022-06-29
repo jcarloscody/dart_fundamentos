@@ -51,3 +51,4 @@ dart run
   - não podem ser alteradas depois de inicializadas
   - são definidas no programa em tempo de compilacao
   - não podem receber valores de outras variaveis a nao ser que essas variaveis forem const tbm
+  - 
