@@ -17,13 +17,16 @@
 - [dart pad](https://dartpad.dev/?)
 - [gist github](https://gist.github.com/)
 
-A linguagem Dart é 100% orientado a objeto. `Não há por exemplo tipos primitivos`, porém ela aceita variáveis de nivel superior bem como funções.
 
 
 #### Criação de Projeto
 ```sh
 dart create -t console-full nome_qq
 dart run
+
+crtl + shift + p 
+dart n
+flutter n
 ```
 
 #### Estrutura de um Projeto Dart
@@ -34,8 +37,13 @@ dart run
 - file **`pubspec.lock`**: arquivo que não alteramos, é um arquivo gerado por dentro do projeto dart sob gerência dos pacotes 
 - file **`pubspec.yaml`**: arquivo principal que é o descritor do projeto.
   - **`environment`**: variáveis de ambiente
-    - **sdk**: versão do dart usado no projeto.
-  
+  - **sdk**: versão do dart usado no projeto.
+  - **dependencies**
+    - ^1.2.0  tras todas as atualizações desta versão do bugfix ou seja 1.2.1,  1.2.2...
+  - **dev_dependencies**
+
+A linguagem Dart é 100% orientado a objeto. `Não há por exemplo tipos primitivos`, porém ela aceita variáveis de nivel superior bem como funções.
+
 
 ## Variáveis
 - [Tipos de variáveis]()
